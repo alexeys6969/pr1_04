@@ -10,27 +10,29 @@ int main()
     setlocale(0, "");
     //Первое задание
     float x, y, result;
-    std::cout << "Введите x:\n";
-    std::cin >> x;
 
-    std::cout << "Введите y:\n";
-    std::cin >> y;
+    printf("Введите x:\n");
+    scanf("%f", &x);
 
-    result = x * log(x) + (y / (cos(x) - (x / 3.0f)));
-    std::cout << "Результат первого выражения:\n";
-    std::cout << result << std::endl;
+    printf("Введите y:\n");
+    scanf("%f", &y);
 
-    Второе задание
+    result = x * logf(x) + (y / (cosf(x) - (x / 3.0f)));
+
+    printf("Результат первого выражения:\n");
+    printf("%f\n", result);
+
+    //Второе задание
     float longOfSquare, volume, square;
-    std::cout << "Введите длину стороны куба:\n";
-    std::cin >> longOfSquare;
 
-    volume = pow(longOfSquare, 3);
-    square = 6 * pow(longOfSquare, 2);
-    std::cout << "Объем куба: ";
-    std::cout << volume << std::endl;
-    std::cout << "Площадь куба: ";
-    std::cout << square << std::endl;
+    printf("Введите длину стороны куба:\n");
+    scanf("%f", &longOfSquare);
+
+    volume = powf(longOfSquare, 3.0f);
+    square = 6.0f * powf(longOfSquare, 2.0f);
+
+    printf("Объем куба: %f\n", volume);
+    printf("Площадь куба: %f\n", square);
 
     //Третье задание
     float radius, high, volumeCilindr, squareCilindr, pi;
